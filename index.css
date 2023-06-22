@@ -1,0 +1,378 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: black;
+  font-weight: 400;
+}
+
+nav.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px;
+}
+
+div.links {
+  display: inline-flex;
+  align-items: center;
+  margin: 0px 5px;
+}
+
+div.github a,
+div.twitter a,
+div.linkedin a,
+div.email a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 9px;
+  font-size: 22px;
+  text-decoration: none;
+  color: black;
+}
+
+div.github img,
+div.twitter img,
+div.linkedin img,
+div.email img {
+  height: 20px;
+  width: 20px;
+  margin-right: 3px;
+}
+
+section.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+div.circle img:nth-child(1) {
+  height: 350px;
+  z-index: 1000;
+  position: relative;
+  display: block;
+}
+div.circle img:nth-child(2) {
+  margin-top: -50px;
+  z-index: 1;
+  display: block;
+  height: 250px;
+}
+
+div.rectangle img {
+  display: block;
+}
+
+div.rectangle img:nth-child(1) {
+  height: 200px;
+  position: relative;
+  z-index: 100;
+}
+div.rectangle img:nth-child(2) {
+  height: 270px;
+  margin-top: -70px;
+  float: right;
+  z-index: 1;
+}
+
+div.images {
+  display: inline-flex;
+  align-items: center;
+}
+
+div.images img {
+  margin: 0px 10px;
+  height: 50px;
+}
+div.text {
+  text-align: center;
+}
+div.text h1 {
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+div.text p {
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+section.about{
+    margin-top: 50px;
+}
+
+div.cover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px 70px;
+}
+div.image{
+    flex: 1 1 25rem;
+    text-align: center;
+}
+
+div.image img{
+    width: 50%;
+}
+
+div.about-des{
+    flex: 1 1 25rem;
+   
+}
+div.arrow{
+    display: inline-flex;
+    align-items: center;
+    margin-right: 40px;
+    border: 1px solid black;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    border-radius: 3px;
+   
+}
+
+div.arrow img{
+    height: 20px;
+    margin-right: 5px;
+}
+
+div.arrow-image{
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+}
+
+div.about-des #p{
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+section.gallery{
+    padding-top: 80px;
+    text-align: center;
+}
+
+.gallery .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 60px 110px;
+}
+
+.gallery .container .box{
+    flex: 1 1 20rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.gallery .container .box img{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 5px;
+    
+}
+
+div.down {
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    left: 30%;
+    color: white;
+}
+div.down h2{
+    margin-bottom: 10px;
+}
+
+section.need{
+    text-align: center;
+}
+
+section.need h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+
+}
+
+div.more a{
+    color: black;
+    font-size: 17px;
+    margin: 0px 10px;
+}
+
+
+@media screen and (max-width: 940px) {
+    
+div.cover{
+    padding: 0px 0px;
+}
+.gallery .container{
+    padding: 40px 30px;
+    text-align: center;
+}
+  }
+
+@media screen and (max-width: 720px) {
+  nav.nav-bar {
+    display: block;
+    text-align: center;
+    margin: 0px auto;
+  }
+
+  div.about-des #p{
+    text-align: center;
+    padding: 50px;
+}
+div.arrow-image{
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 60px;
+}
+
+  div.links {
+    margin-top: 30px;
+  }
+  /* section.gallery{
+    padding: 8rem 3%;
+} */
+}
+
+@media screen and (max-width: 860px) {
+  div.text h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  div.circle img:nth-child(1) {
+    height: 270px;
+    z-index: 1000;
+    position: relative;
+    display: block;
+  }
+  div.circle img:nth-child(2) {
+    height: 170px;
+  }
+  div.text p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  div.circle img:nth-child(1) {
+    height: 220px;
+  }
+
+  div.circle img:nth-child(2) {
+    height: 150px;
+  }
+  div.text h1 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  div.images img {
+    height: 35px;
+  }
+
+  div.rectangle img:nth-child(1) {
+    height: 150px;
+    position: relative;
+    z-index: 100;
+  }
+  div.rectangle img:nth-child(2) {
+    height: 210px;
+    margin-top: -70px;
+    float: right;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  div.text h1 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  div.images img {
+    height: 30px;
+  }
+  div.circle img:nth-child(1) {
+    height: 140px;
+  }
+
+  div.circle img:nth-child(2) {
+    height: 140px;
+  }
+  div.rectangle img:nth-child(1) {
+    height: 110px;
+    position: relative;
+    z-index: 100;
+  }
+  div.rectangle img:nth-child(2) {
+    height: 150px;
+    margin-top: -70px;
+    float: right;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  div.text h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  div.text p {
+    font-size: 15px;
+  }
+
+  div.images img {
+    height: 25px;
+  }
+  div.circle img:nth-child(1) {
+    height: 120px;
+  }
+
+  div.circle img:nth-child(2) {
+    height: 120px;
+  }
+  div.rectangle img:nth-child(1) {
+    height: 100px;
+    position: relative;
+    z-index: 100;
+  }
+  div.rectangle img:nth-child(2) {
+    height: 140px;
+    margin-top: -70px;
+    float: right;
+    z-index: 1;
+  }
+  div.about-des #p{
+    text-align: center;
+    padding: 50px;
+    font-size: 29px;
+    font-weight: 500;
+}
+
+div.arrow{
+    width: 130px;
+}
+
+}
